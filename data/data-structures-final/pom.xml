@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- ── Project Identity ──────────────────────────────────────────────────── -->
+    <groupId>com.fraudoperations</groupId>
+    <artifactId>data-structures-final</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <name>Fraud Detection System</name>
+    <description>
+        A Java-based fraud detection program using custom data structures
+        to detect elder financial abuse and fraud rings from CSV cardholder data.
+    </description>
+
+    <!-- ── Java Version ──────────────────────────────────────────────────────── -->
+    <!--
+        Change source/target to 25 if you are using Java 25.
+        Java 21 is the LTS version and is recommended for maximum compatibility.
+    -->
+    <properties>
+        <maven.compiler.source>25</maven.compiler.source>
+        <maven.compiler.target>25</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <!-- ── Dependencies ──────────────────────────────────────────────────────── -->
+    <dependencies>
+
+        <!-- Apache POI: reads fraud_detection_rules.xlsx -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>5.2.5</version>
+        </dependency>
+
+        <!-- JUnit 5: unit testing -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.10.0</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+    <!-- ── Build ─────────────────────────────────────────────────────────────── -->
+    <build>
+        <plugins>
+
+            <!-- Builds a runnable JAR: java -jar target/fraud-detection.jar -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.3.0</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>com.fraudoperations.Main</mainClass>
+                        </manifest>
+                    </archive>
+                    <finalName>fraud-detection</finalName>
+                </configuration>
+            </plugin>
+
+            <!-- Run via: mvn exec:java -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    <mainClass>com.fraudoperations.Main</mainClass>
+                </configuration>
+            </plugin>
+
+            <!-- JUnit 5 test runner -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.1.2</version>
+            </plugin>
+
+        </plugins>
+    </build>
+
+</project>
