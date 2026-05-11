@@ -1,0 +1,13 @@
+C:\Users\sanlo\OneDrive\Documents\GitHub\Fraud_operations\data\data-structures-final\src\main\java\com\fraudoperations\Main.java
+C:\Users\sanlo\OneDrive\Documents\GitHub\Fraud_operations\data\data-structures-final\src\main\java\com\fraudoperations\managers\CaseReviewQueue.java
+C:\Users\sanlo\OneDrive\Documents\GitHub\Fraud_operations\data\data-structures-final\src\main\java\com\fraudoperations\managers\CSVLoader.java
+C:\Users\sanlo\OneDrive\Documents\GitHub\Fraud_operations\data\data-structures-final\src\main\java\com\fraudoperations\managers\DisputeManager.java
+C:\Users\sanlo\OneDrive\Documents\GitHub\Fraud_operations\data\data-structures-final\src\main\java\com\fraudoperations\managers\SuspectManager.java
+C:\Users\sanlo\OneDrive\Documents\GitHub\Fraud_operations\data\data-structures-final\src\main\java\com\fraudoperations\managers\TransactionManager.java
+C:\Users\sanlo\OneDrive\Documents\GitHub\Fraud_operations\data\data-structures-final\src\main\java\com\fraudoperations\models\Dispute.java
+C:\Users\sanlo\OneDrive\Documents\GitHub\Fraud_operations\data\data-structures-final\src\main\java\com\fraudoperations\models\Suspect.java
+C:\Users\sanlo\OneDrive\Documents\GitHub\Fraud_operations\data\data-structures-final\src\main\java\com\fraudoperations\models\Transaction.java
+C:\Users\sanlo\OneDrive\Documents\GitHub\Fraud_operations\data\data-structures-final\src\main\java\com\fraudoperations\systems\ConnectionGraph.java
+C:\Users\sanlo\OneDrive\Documents\GitHub\Fraud_operations\data\data-structures-final\src\main\java\com\fraudoperations\systems\HashIndexSystem.java
+C:\Users\sanlo\OneDrive\Documents\GitHub\Fraud_operations\data\data-structures-final\src\main\java\com\fraudoperations\systems\InvestigationTrail.java
+C:\Users\sanlo\OneDrive\Documents\GitHub\Fraud_operations\data\data-structures-final\src\main\java\com\fraudoperations\systems\RiskEngine.java

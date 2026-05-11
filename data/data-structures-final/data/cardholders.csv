@@ -1,0 +1,7 @@
+suspectID,name,email,phone,address,city,state,zip,ipAddress,availableBalance,age,riskScore,riskLevel,notes
+2001,Dorothy Haines,dorothy.haines1946@gmail.com,555-301-7742,88 Magnolia Ln,Savannah,GA,31401,10.20.30.40,42000.0,78,0,LOW,"ELDER VICTIM — widow, fixed income, grandson Ray listed as emergency contact"
+2002,Ray Haines,rayhaines31@gmail.com,555-302-9981,88 Magnolia Ln,Savannah,GA,31401,10.20.30.40,1200.0,31,0,LOW,"PRIMARY ABUSER — lives with Dorothy, claims caretaker role, controls her accounts"
+2003,Tammy Ogle,tammy.ogle99@yahoo.com,555-303-4456,14 Creekside Dr,Savannah,GA,31405,10.20.30.40,3100.0,28,0,LOW,"ACCOMPLICE — Ray's girlfriend, shares IP with Ray and Dorothy, receives shipments"
+2004,Darnell Cross,d.cross.atl@gmail.com,555-304-8823,302 Pineview Ct,Pooler,GA,31322,172.30.40.55,5800.0,34,0,LOW,"ACCOMPLICE — Ray's friend, mule account, shares merchants and Ray's email on transactions"
+2005,Margaret Ellis,m.ellis.ret@gmail.com,555-305-1123,7 Rosewood Ave,Savannah,GA,31401,198.18.0.5,28000.0,71,0,LOW,"CLEAN ELDER — legitimate cardholder, control group"
+2006,Samuel Price,sam.price.cpa@outlook.com,555-306-5567,910 Harbor View Rd,Savannah,GA,31410,203.0.113.22,15000.0,45,0,LOW,"CLEAN — legitimate cardholder, control group"
