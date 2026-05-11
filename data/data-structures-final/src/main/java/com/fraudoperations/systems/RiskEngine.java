@@ -154,7 +154,7 @@ public class RiskEngine {
     /**
      * Builds an ArrayList from the suspect Map and sorts it using the
      * custom merge sort implementation below.
-     *
+    *
      * @return ArrayList of all suspects ordered highest to lowest risk
      */
     public List<Suspect> sortSuspectsByRisk() {

@@ -26,7 +26,7 @@ public class Main {
     public static final String CYAN  = "\u001B[36m";
     public static final String RESET = "\u001B[0m";
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         // Startup Banner
         System.out.println(GREEN);
@@ -37,18 +37,27 @@ public class Main {
         System.out.println("██║     ██║  ██║██║  ██║╚██████╔╝██████╔╝╚██████╔╝██║     ███████║");
         System.out.println("╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝  ╚═════╝ ╚═╝     ╚══════╝");
         System.out.println(RESET);
+        Thread.sleep(500);
 
         System.out.println(CYAN + "════════════════════════════════════════════════════════════");
         System.out.println("        FRAUD DETECTION & INVESTIGATION SYSTEM");
         System.out.println("════════════════════════════════════════════════════════════" + RESET);
 
+        System.out.println();
         System.out.println(" Loading suspect database...");
+        Thread.sleep(500);
         System.out.println(" Loading transaction records...");
+        Thread.sleep(500);
         System.out.println(" Loading fraud detection rules...");
+        Thread.sleep(500);
         System.out.println(" Evaluating rules against all transactions...");
+        Thread.sleep(500);
         System.out.println(" Building fraud connection graph...");
+        Thread.sleep(500);
         System.out.println(" Calculating risk scores...");
+        Thread.sleep(500);
         System.out.println(" Initializing investigation systems...");
+        Thread.sleep(500);
         System.out.println();
 
         // 1. Load CSV paths from config.properties
@@ -62,10 +71,10 @@ public class Main {
             System.err.println("config.properties not found on classpath. Using defaults.");
         }
 
-        String cardholderPath  = config.getProperty("cardholder.csv.path",  "data/cardholders.csv");
-        String transactionPath = config.getProperty("transaction.csv.path",  "data/transactions.csv");
-        String rulesPath       = config.getProperty("rules.csv.path",        "data/fraud_detection_rules.csv");
-
+        String cardholderPath  = config.getProperty("cardholder.csv.path", "data\\data-structures-final\\data\\cardholders.csv");
+        String transactionPath = config.getProperty("transaction.csv.path", "data\\data-structures-final\\data\\transactions.csv");
+        String rulesPath       = config.getProperty("rules.csv.path",       "data\\data-structures-final\\data\\fraud_detection_rules.csv");
+        
         // 2. Load cardholders and transactions
         CSVLoader loader = new CSVLoader(cardholderPath, transactionPath);
         Map<Integer, Suspect> suspectDB    = loader.loadSuspects();
