@@ -1,5 +1,5 @@
 # Fraud Detection System
-### Data Structures Final Project — `com.fraudoperations`
+### Data Structures Final Project — 
 
 A Java console application that detects financial fraud, elder financial abuse, and coordinated fraud rings by loading cardholder and transaction data from CSV files and analyzing it using purpose-built data structures.
 
@@ -153,9 +153,15 @@ On launch, `Main.java` executes the following steps in order before presenting t
 
 ### Feature 3 & 4 — Online & In-Person Checks (`TransactionManager.java`)
 
-Online checks: name/email/address mismatch, amount > $5,000, CNP > $1,500, auth stuffing (> 2 attempts), odd hours (12 AM–5 AM), round amounts ($500 multiples).
+Online checks: name/email/address mismatch, 
+amount > $5,000, 
+CNP > $1,500, 
+auth stuffing (> 2 attempts), 
+odd hours (12 AM–5 AM), 
+round amounts ($500 multiples).
 
-In-person checks: name/email/address mismatch, amount > $5,000.
+In-person checks: name/email/address mismatch, 
+amount > $5,000.
 
 Both channels output reports via `generateOnlineReport()` and `generateInPersonReport()`.
 
